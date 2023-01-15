@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bruno Pizza</title>
+		<meta charset="utf-8" >
+        <meta name="description" content="Web Development Assignment 1" >
+        <meta name="keywords"    content="HTML and CSS" >
+        <meta name="author"      content="Uthpalanie" >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Hurricane&family=Inspiration&family=Poppins:ital,wght@0,700;0,900;1,100;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/registration.css">
+		<script src="./js/register.js"></script>
+	</head>
+	<body id="home">
+		<!-- Navbar (Sits on top) -->
+		<nav class="navBar">
+            <a href="index.html">HOME</a>
+            <a href="registration.html">REGISTER</a>
+            <a href="order.html">ORDERS</a>
+        </nav>
+
+		<!-- Header image -->
+		<div class="registrationImage"></div>
+		<div class="title">
+			<h1>Become a member</h1>
+		</div>
+
+		<div class="w3-display-bottomleft"></div>
+		<article>
+			<form method="post" action="http://mercury.swin.edu.au/it000000/cos10024/regtest.php" onsubmit="return validate()">
+				<fieldset id="field_PersonalInformation">
+				<fieldset double line><br>
+					<legend><B><U>Personal Details</U></B></legend>
+					<label for="FName">First name:</label>
+					<input type="text" id="FName" name="FName" maxlength="20">
+					<br><br>
+					<label for="LName">Last name:</label>
+					<input type="text" id="LName" name="LName" maxlength="20"><br><br>
+					<div>
+						<label>Gender</label><br>
+						<label for="male">Male</label>
+						<input type="radio" id="male" name="gender" value="male" checked>
+						<label for="female">Female</label>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="other">Other</label>
+						<input type="radio" id="other" name="gender" value="other">
+					</div>
+					<br>
+					<label for="DOB">Date of registration:</label>
+					<input type="date" id="DOB" name="DOB"><br><br>
+				</fieldset>	
+				
+				<fieldset id="field_ContactDetails">
+					<legend><B><U>Contact Details</U></B></legend>
+					<label for="Street">Street Address:</label>
+					<input type="text" id="Street" name="Street" maxlength="40"><br><br>
+					<label for="Town">Suburb/town:</label>
+					<input type="text" id="Town" name="Town" maxlength="40"><br><br>
+					<label for="Postcode">PostCode:</label>
+					<input type="text" id="Postcode" name="Postcode"><br><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"><br><br>
+					<label for="TpNo">Phone No:</label>
+					<input type="" id="TpNo" name="TpNo" pattern="\d{3}\  \d{3}\ \d{4}"> <br><br>
+				</fieldset>
+
+				<fieldset id="Account">
+					<legend><B><U>Account Details</U></B></legend>
+					<label for="Title">Your Title</label><br>
+					<input type="text" id="Ltitle" name="Ltitle" maxlength="20" ><br>
+					<label for="UName">User Name</label><br>
+					<input type="text" id="UName" name="UName" maxlength="20"><br>
+					<label for="password">Password</label><br>
+					<input type="password" id="Password" name="Password" maxlength="20"><br>
+					<label for="confirm">Confirm Password</label><br>
+					<input type="password" id="confirm" name="confirm" maxlength="20"><br>
+					<label for="country">Country</label><br>
+					<select name="">
+						<option value="Sri Lanka">Sri Lanka</option>
+						<option value="India">India</option>
+						<option value="Maldives">Maldives</option>
+						<option value="Australia">Australia</option>
+						<option value="singapore">singapore</option>
+					</select><br><br>				
+					<label for="favoritepizza"> Favourite Pizza</label><br>
+					<select name="Various Pizza">
+						<option value="Margherita">Margherita</option>
+						<option value="Formaggio">Formaggio</option>
+						<option value="Meat_town">Meat town</option>
+						<option value="Cheese_pizza">Cheese pizza</option>
+					</select>
+					<br><br>				
+					<label for="Comment">Comments</label><br>
+					<textarea id="Comment" name="Comment" rows="4" cols="50">Enter your comments about bruno pizza
+					</textarea>
+				</fieldset>
+				<br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset" ><br>
+			</form>
+		</article>
+		<footer>
+			<h6>SRI LANKA BRUNO PIZZA<br><br>@hot line->1234<br>
+			@CONTACT -> 014-7892576<br>
+			@ADDRESS -> NO.456,<br>Main branch,<br>Paradise,<br>Colombo.<br>
+			@E-mail -> <a href="bruno1234@gmail.com">BRUNO_PIZZA</a>"><br>          
+			<br>Takeaway/Delivary/Restaurant<br></h6>
+		</footer>
+	</body>
+
+
+</html>
